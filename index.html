@@ -22,9 +22,21 @@
 
   <style>
 
-    /*
-      misc styles, nothing to do with CSS variables
-    */
+   :root {
+       --base: #ffc600;
+       --spacing: 10px;
+       --blur: 10px;
+   }
+
+   /* when you want to use a variable in css, use var(--)*/
+   img {
+       padding: var(--spacing);
+       background: var(--base);
+
+   }
+
+
+
 
     body {
       text-align: center;
